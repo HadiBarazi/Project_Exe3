@@ -1,0 +1,43 @@
+/* Web Programming Step by Step, Homework 9 (To-Do List) solution
+   Please do not distribute! */
+
+body, input, select, option, button, a {
+	color: #005AB4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+body, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+}
+
+.headfoot {
+	background-color: #005AB4;
+	color: white;
+	padding: 0.5em;
+}
+
+h1 img {
+	float: left;
+	margin-right: 1em;
+}
+
+#main {
+	margin: 2em;
+}
+
+
+  .over {
+    background-color: lightblue;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
