@@ -24,4 +24,4 @@ const nameInput = document.getElementById('name');
 				// Failed login, show an error message
 				window.location.href = '/index.html';
 			  }
-			});
+		});

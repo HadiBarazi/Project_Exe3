@@ -62,10 +62,6 @@ delete_.addEventListener('click', async () => {
 });
 
 
-
-
-
-
 // Internet Programming 2, 2023
 // drag and drop exmaple
 
