@@ -1,6 +1,7 @@
 const nameInput = document.getElementById('name');
 			const passInput = document.getElementById('password');
 			const submitbutton = document.getElementById('submitbutton'); // Rename the button
+			
 			//const resultSpan = document.getElementById('result');
 		
 			submitbutton.addEventListener('click', async () => {
