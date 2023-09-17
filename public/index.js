@@ -26,3 +26,5 @@ const nameInput = document.getElementById('name');
 				window.location.href = '/index.html';
 			  }
 		});
+
+		
