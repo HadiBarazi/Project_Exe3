@@ -85,15 +85,6 @@ let draggedElement;
 // all drggable items
 
 // assigns functions
-const items = todolist.getElementsByTagName('li').map(li => li.textContent);
-items.forEach(function (item) {
-    item.addEventListener('dragstart', handleDragStart);
-    item.addEventListener('dragover', handleDragOver);
-    item.addEventListener('dragenter', handleDragEnter);
-    item.addEventListener('dragleave', handleDragLeave);
-    item.addEventListener('dragend', handleDragEnd);
-    item.addEventListener('drop', handleDrop);
-});
 
 // makes the object movable and stores its data in the dataTransfer temp object
 function handleDragStart(e) {
