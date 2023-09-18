@@ -29,7 +29,12 @@ const get_list = $(async function(){
 	    'Content-Type': 'application/json'
 	}
     });
-			  
+	if (response.status === 401)
+    {
+        console.log("B");
+        window.location.href = '/index.html';
+        return;
+    }
 	const list = await response.json();
 	update_list(list)
 });
@@ -43,6 +48,11 @@ const post_list = $(async function(items){
 	    },
 		body: JSON.stringify({ items })
 	});
+    if (response.status === 401)
+    {
+        window.location.href = '/index.html';
+        return;
+    }
 	const list = await response.json();
 	update_list(list)
 });
@@ -60,6 +70,8 @@ delete_.addEventListener('click', async () => {
 	items.shift();
 	post_list(items);
 });
+
+
 
 
 
